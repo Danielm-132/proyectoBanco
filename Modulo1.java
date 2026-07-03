@@ -7,7 +7,6 @@ public class Modulo1 {
         int opcion = 0;
         int indiceCuenta = -1;
 
-        // Menú inicial
         while (!sesionIniciada) {
             System.out.println("===== MENU INICIAL =====");
             System.out.println("1. Crear cuenta");
@@ -24,7 +23,7 @@ public class Modulo1 {
                 System.out.print("Ingrese contraseña: ");
                 String contrasena = sc.nextLine();
 
-                // Llamada al módulo 2 (saldo inicial siempre 0)
+        
                 modulo2.crearCuenta(usuario, contrasena);
 
             } else if (opcion == 2) {
@@ -50,9 +49,9 @@ public class Modulo1 {
             }
         }
 
-        // Menú principal
+        
         do {
-            System.out.println("===== MENU PRINCIPAL =====");
+            System.out.println("=MENU PRINCIPAL=");
             System.out.println("4. Depositar");
             System.out.println("5. Retirar");
             System.out.println("6. Transferir");
@@ -97,11 +96,12 @@ public class Modulo1 {
                 }
 
             } else if (opcion == 7) {
-                System.out.println(">> Consultar saldo");
+                System.out.println(">>Consultar saldo");
                 modulo3.mostrarSaldo(indiceCuenta);
 
             } else if (opcion == 8) {
                 System.out.println(">> Saliendo del sistema...");
+                modulo5.salir();
             } else {
                 System.out.println(">> Opción inválida.");
             }
