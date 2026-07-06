@@ -13,6 +13,7 @@ public class modulo3 {
     public static void retirar(int indiceCuenta, double monto) {
         if (monto > 0 && monto <= modulo2.saldos[indiceCuenta]) {
             modulo2.saldos[indiceCuenta] -= monto;
+            modulo2.retiros[indiceCuenta] += monto;
             System.out.println("Retiro exitoso. Nuevo saldo: $" + modulo2.saldos[indiceCuenta]);
         } else {
             System.out.println("Error: saldo insuficiente o monto inválido.");

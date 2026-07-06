@@ -7,6 +7,10 @@ public class modulo4 {
                     double temp = modulo2.retiros[j];
                     modulo2.retiros[j] = modulo2.retiros[j+1];
                     modulo2.retiros[j+1] = temp;
+
+                    String tempUsuario = modulo2.usuarios[j];
+                    modulo2.usuarios[j] = modulo2.usuarios[j+1];
+                    modulo2.usuarios[j+1] = tempUsuario;
                 }
             }
         }
@@ -16,4 +20,3 @@ public class modulo4 {
         }
     }
 }
-
