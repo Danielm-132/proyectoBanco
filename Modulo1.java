@@ -15,7 +15,6 @@ public class Modulo1 {
                 System.out.println("1. Crear cuenta");
                 System.out.println("2. Iniciar sesion");
                 System.out.println("3. Salir del sistema");
-                System.out.println("4. Reporte de retiros");
                 System.out.print("Seleccione una opción: ");
                 opcion = sc.nextInt();
                 sc.nextLine();
@@ -59,6 +58,7 @@ public class Modulo1 {
                 System.out.println("7. Transferir");
                 System.out.println("8. Consultar saldo");
                 System.out.println("9. Cerrar sesión");
+                System.out.println("10. Reporte de retiros");
                 System.out.print("Seleccione una opción: ");
                 opcion = sc.nextInt();
                 sc.nextLine();
@@ -101,7 +101,7 @@ public class Modulo1 {
                 } else if (opcion == 9) {
                     System.out.println(">> Cerrando sesión...");
                     sesionIniciada = false; 
-                } else if (opcion == 4) {
+                } else if (opcion == 10) {
                     System.out.println(" Reporte de retiros");
                     modulo4.reporteRetiros();
                 } else {
