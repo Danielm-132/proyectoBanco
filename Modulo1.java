@@ -108,7 +108,7 @@ public class Modulo1 {
                     System.out.println("Opción inválida.");
                 }
 
-            } while (opcion != 8);
+            } while (opcion != 9);
         }
     }
 }
